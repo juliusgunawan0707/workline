@@ -1,0 +1,10 @@
+# Never commit an unsanitised build or any real export.
+tools/_source.html
+*-backup-*.json
+cadangan-*.json
+seed.json
+index-sebelum-*.html
+
+# Holds the exact identifiers it strips (unit names, internal URL) -- publishing
+# it would leak what the sanitising was for. Kept locally to re-run on updates.
+tools/sanitize.py
