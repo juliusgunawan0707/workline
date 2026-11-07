@@ -9,7 +9,7 @@
 
 - Tombol **EN / ID** di kanan atas. Default: **English**. Pilihan tersimpan di browser Anda.
 - Ikon matahari/bulan di sampingnya mengganti tema terang/gelap. Default: **gelap**.
-- **Dokumen yang dihasilkan (Rekap Presensi, Notulensi, kalimat realisasi EKP) selalu dalam Bahasa Indonesia**, apa pun bahasa antarmuka yang dipilih — karena dokumen itu masuk ke sistem presensi dan EKP resmi berbahasa Indonesia. Yang berganti bahasa hanya label, tombol, dan menu.
+- **Dokumen yang dihasilkan (Rekap Presensi, Notulensi, kalimat realisasi EKP, ekspor Excel/Word) mengikuti bahasa antarmuka.** Dalam mode EN dokumen berbahasa Inggris dan istilah SKP/EKP tampil sebagai KPI/Performance appraisal; dalam mode ID tetap seperti semula. Data demo bawaan berbahasa Inggris.
 - Font: **Poppins**.
 
 ---
@@ -182,7 +182,7 @@ Tab **EKP** menghasilkan tabel siap tempel ke kolom "REALISASI BERDASARKAN BUKTI
 ## 5. Batas teknis yang perlu diketahui
 
 - **Maksimal 5.000 dokumen** per aplikasi. Terpakai sekarang: 96. Isi Kotak Sampah ikut dihitung selama 30 hari masa tahannya. Perkiraan pemakaian ~3.000/tahun, jadi rutin arsip tahunan akan dibutuhkan sekitar pertengahan tahun kedua (masuk Tahap B).
-- Data tersimpan di server Anthropic, privat untuk organisasi Anda, tidak bisa dibagikan lewat tautan publik. **Notulensi sensitif: simpan poinnya saja di sini, dokumen aslinya di Drive**, lalu tautkan URL-nya di kolom bukti dukung.
+- Data tersimpan di browser Anda (`localStorage`), tidak dikirim ke server mana pun. **Notulensi sensitif: simpan poinnya saja di sini, dokumen aslinya di Drive**, lalu tautkan URL-nya di kolom bukti dukung. Tombol AI (Perhalus, Susun dengan AI) hanya aktif di lingkungan yang menyediakan model; di luar itu semua perhitungan tetap jalan, hanya penyusunan notulensi dari catatan mentah yang butuh AI.
 - Tombol **Cadangkan** di kanan atas mengunduh seluruh data sebagai JSON. Lakukan sebulan sekali.
 - Fitur AI memakai kuota Claude Anda dan minta izin sekali di awal. Kalau ditolak, semua tombol tetap berfungsi dengan versi hitungan/template — aplikasi tidak rusak.
 

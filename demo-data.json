@@ -5,7 +5,7 @@
  "tasks": [
   {
    "id": "t001",
-   "judul": "Menyusun draf perjanjian kinerja unit Sekretariat",
+   "judul": "Draft the performance agreement for Secretariat",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -26,7 +26,7 @@
   },
   {
    "id": "t002",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -47,7 +47,7 @@
   },
   {
    "id": "t003",
-   "judul": "Menyelesaikan kendala akses akun e-Surat pengguna Direktorat Lingkungan",
+   "judul": "Resolve e-Surat account access issue for Environment Directorate users",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -68,7 +68,7 @@
   },
   {
    "id": "t004",
-   "judul": "Mengikuti pelatihan perencanaan dan penganggaran",
+   "judul": "Attend training on planning and budgeting",
    "deskripsi": "",
    "kategori": "Pengembangan Kompetensi",
    "project_id": "",
@@ -89,7 +89,7 @@
   },
   {
    "id": "t005",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -110,7 +110,7 @@
   },
   {
    "id": "t006",
-   "judul": "Menyusun rekapitulasi capaian output triwulan",
+   "judul": "Compile the quarterly output achievement summary",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p5",
@@ -131,7 +131,7 @@
   },
   {
    "id": "t007",
-   "judul": "Menyusun draf perjanjian kinerja unit Sekretariat",
+   "judul": "Draft the performance agreement for Secretariat",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -152,7 +152,7 @@
   },
   {
    "id": "t008",
-   "judul": "Menyelesaikan kendala akses akun e-Surat pengguna Biro Umum",
+   "judul": "Resolve e-Surat account access issue for General Affairs Bureau users",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -173,7 +173,7 @@
   },
   {
    "id": "t009",
-   "judul": "Menyusun draf SOP Pengelolaan Arsip Dinamis",
+   "judul": "Draft SOP for Dynamic Records Management",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p2",
@@ -194,7 +194,7 @@
   },
   {
    "id": "t010",
-   "judul": "Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+   "judul": "Assist signing officials with e-signature use",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -202,7 +202,7 @@
    "prioritas": "Sedang",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-04",
    "jam_mulai": "08:30",
    "jam_selesai": "10:00",
@@ -215,7 +215,7 @@
   },
   {
    "id": "t011",
-   "judul": "Merapikan arsip dokumen Tata Naskah Dinas",
+   "judul": "Organize the Official Correspondence Format archive",
    "deskripsi": "",
    "kategori": "Administrasi Umum",
    "project_id": "",
@@ -236,7 +236,7 @@
   },
   {
    "id": "t012",
-   "judul": "Memutakhirkan dashboard monitoring capaian output",
+   "judul": "Update the output achievement dashboard",
    "deskripsi": "",
    "kategori": "Pengembangan Aplikasi",
    "project_id": "p5",
@@ -257,7 +257,7 @@
   },
   {
    "id": "t013",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Direktorat Perencanaan",
+   "judul": "Distribute the satisfaction survey questionnaire to Planning Directorate",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -278,7 +278,7 @@
   },
   {
    "id": "t014",
-   "judul": "Menyusun draf SOP Pengajuan Kerja Sama",
+   "judul": "Draft SOP for Cooperation Proposals",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p2",
@@ -286,7 +286,7 @@
    "prioritas": "Rendah",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-06",
    "jam_mulai": "14:30",
    "jam_selesai": "15:30",
@@ -299,7 +299,7 @@
   },
   {
    "id": "t015",
-   "judul": "Menelaah draf perjanjian kerja sama dengan Unit Layanan",
+   "judul": "Review draft cooperation agreement with Legal and PR Unit",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p6",
@@ -320,7 +320,7 @@
   },
   {
    "id": "t016",
-   "judul": "Memutakhirkan dashboard monitoring capaian output",
+   "judul": "Update the output achievement dashboard",
    "deskripsi": "",
    "kategori": "Pengembangan Aplikasi",
    "project_id": "p5",
@@ -341,7 +341,7 @@
   },
   {
    "id": "t017",
-   "judul": "Menyusun draf perjanjian kinerja unit Biro Umum",
+   "judul": "Draft the performance agreement for General Affairs Bureau",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -362,7 +362,7 @@
   },
   {
    "id": "t018",
-   "judul": "Rapat koordinasi persiapan Monitoring dan Evaluasi",
+   "judul": "Attend coordination meeting to prepare Monitoring and Evaluation",
    "deskripsi": "",
    "kategori": "Rapat & Koordinasi",
    "project_id": "",
@@ -383,7 +383,7 @@
   },
   {
    "id": "t019",
-   "judul": "Menyiapkan bahan evaluasi akuntabilitas kinerja",
+   "judul": "Prepare material for the accountability evaluation",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p8",
@@ -404,7 +404,7 @@
   },
   {
    "id": "t020",
-   "judul": "Menyiapkan bahan evaluasi akuntabilitas kinerja",
+   "judul": "Prepare material for the accountability evaluation",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p8",
@@ -412,7 +412,7 @@
    "prioritas": "Mendesak",
    "status": "Selesai",
    "sumber": "Disposisi Pimpinan",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-11",
    "jam_mulai": "10:30",
    "jam_selesai": "11:15",
@@ -425,7 +425,7 @@
   },
   {
    "id": "t021",
-   "judul": "Menyusun draf perjanjian kinerja unit Direktorat Perencanaan",
+   "judul": "Draft the performance agreement for Planning Directorate",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -433,7 +433,7 @@
    "prioritas": "Sedang",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-11",
    "jam_mulai": "08:00",
    "jam_selesai": "10:00",
@@ -446,7 +446,7 @@
   },
   {
    "id": "t022",
-   "judul": "Menyelesaikan kendala akses akun e-Surat pengguna Direktorat Lingkungan",
+   "judul": "Resolve e-Surat account access issue for Environment Directorate users",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -467,7 +467,7 @@
   },
   {
    "id": "t023",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Unit Layanan",
+   "judul": "Distribute the satisfaction survey questionnaire to Legal and PR Unit",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -475,7 +475,7 @@
    "prioritas": "Sedang",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-12",
    "jam_mulai": "10:15",
    "jam_selesai": "11:45",
@@ -488,7 +488,7 @@
   },
   {
    "id": "t024",
-   "judul": "Menerbitkan sertifikat tanda tangan elektronik untuk Direktorat Lingkungan",
+   "judul": "Issue electronic signature certificates for Environment Directorate",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -509,7 +509,7 @@
   },
   {
    "id": "t025",
-   "judul": "Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+   "judul": "Assist signing officials with e-signature use",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -530,7 +530,7 @@
   },
   {
    "id": "t026",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Inspektorat",
+   "judul": "Distribute the satisfaction survey questionnaire to Inspectorate",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -551,7 +551,7 @@
   },
   {
    "id": "t027",
-   "judul": "Memproses 6 surat masuk pada aplikasi e-Surat",
+   "judul": "Process 6 incoming letters in the e-Surat app",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -572,7 +572,7 @@
   },
   {
    "id": "t028",
-   "judul": "Menyusun draf perjanjian kinerja unit Unit Layanan",
+   "judul": "Draft the performance agreement for Legal and PR Unit",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -593,7 +593,7 @@
   },
   {
    "id": "t029",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -614,7 +614,7 @@
   },
   {
    "id": "t030",
-   "judul": "Mengolah hasil survei kepuasan layanan internal",
+   "judul": "Analyze the internal service satisfaction survey results",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p3",
@@ -635,7 +635,7 @@
   },
   {
    "id": "t031",
-   "judul": "Menyusun rekapitulasi capaian output triwulan",
+   "judul": "Compile the quarterly output achievement summary",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p5",
@@ -656,7 +656,7 @@
   },
   {
    "id": "t032",
-   "judul": "Menyiapkan bahan evaluasi akuntabilitas kinerja",
+   "judul": "Prepare material for the accountability evaluation",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p8",
@@ -677,7 +677,7 @@
   },
   {
    "id": "t033",
-   "judul": "Rapat koordinasi persiapan Pelayanan Informasi Publik",
+   "judul": "Attend coordination meeting to prepare Public Information Services",
    "deskripsi": "",
    "kategori": "Rapat & Koordinasi",
    "project_id": "",
@@ -685,7 +685,7 @@
    "prioritas": "Mendesak",
    "status": "Selesai",
    "sumber": "Hasil Rapat",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-19",
    "jam_mulai": "08:00",
    "jam_selesai": "09:00",
@@ -698,7 +698,7 @@
   },
   {
    "id": "t034",
-   "judul": "Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+   "judul": "Assist signing officials with e-signature use",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -719,7 +719,7 @@
   },
   {
    "id": "t035",
-   "judul": "Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+   "judul": "Assist signing officials with e-signature use",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -740,7 +740,7 @@
   },
   {
    "id": "t036",
-   "judul": "Menyusun rekapitulasi capaian output triwulan",
+   "judul": "Compile the quarterly output achievement summary",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p5",
@@ -761,7 +761,7 @@
   },
   {
    "id": "t037",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Sekretariat",
+   "judul": "Distribute the satisfaction survey questionnaire to Secretariat",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -782,7 +782,7 @@
   },
   {
    "id": "t038",
-   "judul": "Menyelesaikan kendala akses akun e-Surat pengguna Direktorat Perencanaan",
+   "judul": "Resolve e-Surat account access issue for Planning Directorate users",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -803,7 +803,7 @@
   },
   {
    "id": "t039",
-   "judul": "Menyusun draf perjanjian kinerja unit Direktorat Perencanaan",
+   "judul": "Draft the performance agreement for Planning Directorate",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -824,7 +824,7 @@
   },
   {
    "id": "t040",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -845,7 +845,7 @@
   },
   {
    "id": "t041",
-   "judul": "Menerbitkan sertifikat tanda tangan elektronik untuk Unit Layanan",
+   "judul": "Issue electronic signature certificates for Legal and PR Unit",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -866,7 +866,7 @@
   },
   {
    "id": "t042",
-   "judul": "Menyusun draf perjanjian kinerja unit Inspektorat",
+   "judul": "Draft the performance agreement for Inspectorate",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -887,7 +887,7 @@
   },
   {
    "id": "t043",
-   "judul": "Reviu draf SOP Tata Naskah Dinas bersama unit pengusul",
+   "judul": "Review SOP draft for Official Correspondence Format with the submitting unit",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p2",
@@ -908,7 +908,7 @@
   },
   {
    "id": "t044",
-   "judul": "Menerbitkan sertifikat tanda tangan elektronik untuk Biro Perencanaan",
+   "judul": "Issue electronic signature certificates for Planning Bureau",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -916,7 +916,7 @@
    "prioritas": "Tinggi",
    "status": "Selesai",
    "sumber": "Permintaan Unit Lain",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-08-28",
    "jam_mulai": "09:15",
    "jam_selesai": "10:00",
@@ -929,7 +929,7 @@
   },
   {
    "id": "t045",
-   "judul": "Memproses 10 surat masuk pada aplikasi e-Surat",
+   "judul": "Process 10 incoming letters in the e-Surat app",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -950,7 +950,7 @@
   },
   {
    "id": "t046",
-   "judul": "Menelaah draf perjanjian kerja sama dengan Biro Perencanaan",
+   "judul": "Review draft cooperation agreement with Planning Bureau",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p6",
@@ -971,7 +971,7 @@
   },
   {
    "id": "t047",
-   "judul": "Menerbitkan sertifikat tanda tangan elektronik untuk Biro Keuangan",
+   "judul": "Issue electronic signature certificates for Finance Bureau",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -992,7 +992,7 @@
   },
   {
    "id": "t048",
-   "judul": "Mengikuti pelatihan perencanaan dan penganggaran",
+   "judul": "Attend training on planning and budgeting",
    "deskripsi": "",
    "kategori": "Pengembangan Kompetensi",
    "project_id": "",
@@ -1013,7 +1013,7 @@
   },
   {
    "id": "t049",
-   "judul": "Menelaah draf perjanjian kerja sama dengan Direktorat Perencanaan",
+   "judul": "Review draft cooperation agreement with Planning Directorate",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p6",
@@ -1034,7 +1034,7 @@
   },
   {
    "id": "t050",
-   "judul": "Menerbitkan sertifikat tanda tangan elektronik untuk Direktorat Lingkungan",
+   "judul": "Issue electronic signature certificates for Environment Directorate",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -1055,7 +1055,7 @@
   },
   {
    "id": "t051",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Biro Keuangan",
+   "judul": "Distribute the satisfaction survey questionnaire to Finance Bureau",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -1076,7 +1076,7 @@
   },
   {
    "id": "t052",
-   "judul": "Reviu draf SOP Pelayanan Informasi Publik bersama unit pengusul",
+   "judul": "Review SOP draft for Public Information Services with the submitting unit",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p2",
@@ -1097,7 +1097,7 @@
   },
   {
    "id": "t053",
-   "judul": "Menyiapkan bahan evaluasi akuntabilitas kinerja",
+   "judul": "Prepare material for the accountability evaluation",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p8",
@@ -1118,7 +1118,7 @@
   },
   {
    "id": "t054",
-   "judul": "Menyusun rekapitulasi capaian output triwulan",
+   "judul": "Compile the quarterly output achievement summary",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p5",
@@ -1139,7 +1139,7 @@
   },
   {
    "id": "t055",
-   "judul": "Menyusun draf perjanjian kinerja unit Biro Keuangan",
+   "judul": "Draft the performance agreement for Finance Bureau",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -1147,7 +1147,7 @@
    "prioritas": "Rendah",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-08",
    "jam_mulai": "09:15",
    "jam_selesai": "10:45",
@@ -1160,7 +1160,7 @@
   },
   {
    "id": "t056",
-   "judul": "Menyiapkan bahan evaluasi akuntabilitas kinerja",
+   "judul": "Prepare material for the accountability evaluation",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p8",
@@ -1168,7 +1168,7 @@
    "prioritas": "Rendah",
    "status": "Selesai",
    "sumber": "Disposisi Pimpinan",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-09",
    "jam_mulai": "10:15",
    "jam_selesai": "11:45",
@@ -1181,7 +1181,7 @@
   },
   {
    "id": "t057",
-   "judul": "Memproses 15 surat masuk pada aplikasi e-Surat",
+   "judul": "Process 15 incoming letters in the e-Surat app",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -1202,7 +1202,7 @@
   },
   {
    "id": "t058",
-   "judul": "Menelaah draf perjanjian kerja sama dengan Biro Perencanaan",
+   "judul": "Review draft cooperation agreement with Planning Bureau",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p6",
@@ -1223,7 +1223,7 @@
   },
   {
    "id": "t059",
-   "judul": "Menyusun draf perjanjian kinerja unit Sekretariat",
+   "judul": "Draft the performance agreement for Secretariat",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -1244,7 +1244,7 @@
   },
   {
    "id": "t060",
-   "judul": "Rapat koordinasi persiapan Monitoring dan Evaluasi",
+   "judul": "Attend coordination meeting to prepare Monitoring and Evaluation",
    "deskripsi": "",
    "kategori": "Rapat & Koordinasi",
    "project_id": "",
@@ -1265,7 +1265,7 @@
   },
   {
    "id": "t061",
-   "judul": "Memproses 11 surat masuk pada aplikasi e-Surat",
+   "judul": "Process 11 incoming letters in the e-Surat app",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -1286,7 +1286,7 @@
   },
   {
    "id": "t062",
-   "judul": "Merapikan arsip dokumen Pelayanan Informasi Publik",
+   "judul": "Organize the Public Information Services archive",
    "deskripsi": "",
    "kategori": "Administrasi Umum",
    "project_id": "",
@@ -1307,7 +1307,7 @@
   },
   {
    "id": "t063",
-   "judul": "Rapat koordinasi persiapan Monitoring dan Evaluasi",
+   "judul": "Attend coordination meeting to prepare Monitoring and Evaluation",
    "deskripsi": "",
    "kategori": "Rapat & Koordinasi",
    "project_id": "",
@@ -1315,7 +1315,7 @@
    "prioritas": "Sedang",
    "status": "Selesai",
    "sumber": "Hasil Rapat",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-15",
    "jam_mulai": "13:15",
    "jam_selesai": "14:45",
@@ -1328,7 +1328,7 @@
   },
   {
    "id": "t064",
-   "judul": "Mengikuti pelatihan perencanaan dan penganggaran",
+   "judul": "Attend training on planning and budgeting",
    "deskripsi": "",
    "kategori": "Pengembangan Kompetensi",
    "project_id": "",
@@ -1336,7 +1336,7 @@
    "prioritas": "Sedang",
    "status": "Selesai",
    "sumber": "Disposisi Pimpinan",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-16",
    "jam_mulai": "10:00",
    "jam_selesai": "11:00",
@@ -1349,7 +1349,7 @@
   },
   {
    "id": "t065",
-   "judul": "Rapat koordinasi persiapan Pengajuan Kerja Sama",
+   "judul": "Attend coordination meeting to prepare Cooperation Proposals",
    "deskripsi": "",
    "kategori": "Rapat & Koordinasi",
    "project_id": "",
@@ -1370,7 +1370,7 @@
   },
   {
    "id": "t066",
-   "judul": "Reviu draf SOP Pelayanan Informasi Publik bersama unit pengusul",
+   "judul": "Review SOP draft for Public Information Services with the submitting unit",
    "deskripsi": "",
    "kategori": "Telaah & Reviu",
    "project_id": "p2",
@@ -1391,7 +1391,7 @@
   },
   {
    "id": "t067",
-   "judul": "Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+   "judul": "Assist signing officials with e-signature use",
    "deskripsi": "",
    "kategori": "Layanan TTE",
    "project_id": "p7",
@@ -1399,7 +1399,7 @@
    "prioritas": "Rendah",
    "status": "Selesai",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-17",
    "jam_mulai": "14:00",
    "jam_selesai": "15:00",
@@ -1412,7 +1412,7 @@
   },
   {
    "id": "t068",
-   "judul": "Menyebarkan kuesioner survei kepuasan ke unit Unit Layanan",
+   "judul": "Distribute the satisfaction survey questionnaire to Legal and PR Unit",
    "deskripsi": "",
    "kategori": "Monitoring & Evaluasi",
    "project_id": "p3",
@@ -1433,7 +1433,7 @@
   },
   {
    "id": "t069",
-   "judul": "Memutakhirkan dashboard monitoring capaian output",
+   "judul": "Update the output achievement dashboard",
    "deskripsi": "",
    "kategori": "Pengembangan Aplikasi",
    "project_id": "p5",
@@ -1454,7 +1454,7 @@
   },
   {
    "id": "t070",
-   "judul": "Menyusun draf perjanjian kinerja unit Biro Umum",
+   "judul": "Draft the performance agreement for General Affairs Bureau",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -1475,7 +1475,7 @@
   },
   {
    "id": "t071",
-   "judul": "Menyusun draf SOP Pelayanan Informasi Publik",
+   "judul": "Draft SOP for Public Information Services",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p2",
@@ -1483,7 +1483,7 @@
    "prioritas": "Sedang",
    "status": "Berjalan",
    "sumber": "Mandiri",
-   "unit_terkait": "Unit Layanan",
+   "unit_terkait": "UKHK",
    "tanggal": "2026-09-21",
    "jam_mulai": "10:00",
    "jam_selesai": "",
@@ -1496,7 +1496,7 @@
   },
   {
    "id": "t072",
-   "judul": "Menyusun rekapitulasi capaian output triwulan",
+   "judul": "Compile the quarterly output achievement summary",
    "deskripsi": "",
    "kategori": "Analisis Data",
    "project_id": "p5",
@@ -1517,7 +1517,7 @@
   },
   {
    "id": "t073",
-   "judul": "Menyelesaikan kendala akses akun e-Surat pengguna Biro Keuangan",
+   "judul": "Resolve e-Surat account access issue for Finance Bureau users",
    "deskripsi": "",
    "kategori": "Layanan e-Surat & Email",
    "project_id": "p1",
@@ -1538,7 +1538,7 @@
   },
   {
    "id": "t074",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -1559,7 +1559,7 @@
   },
   {
    "id": "t075",
-   "judul": "Menyusun dokumen cascading indikator kinerja utama",
+   "judul": "Draft the key performance indicator cascading document",
    "deskripsi": "",
    "kategori": "Penyusunan Dokumen",
    "project_id": "p4",
@@ -1580,7 +1580,7 @@
   },
   {
    "id": "t076",
-   "judul": "Mengikuti pelatihan perencanaan dan penganggaran",
+   "judul": "Attend training on planning and budgeting",
    "deskripsi": "",
    "kategori": "Pengembangan Kompetensi",
    "project_id": "",
@@ -1603,10 +1603,10 @@
  "projects": [
   {
    "id": "p1",
-   "nama": "Digitalisasi Layanan Persuratan",
+   "nama": "Correspondence Digitalization",
    "unit": "Biro Perencanaan",
-   "deskripsi": "Memindahkan alur surat masuk dan keluar ke aplikasi e-Surat.",
-   "tujuan": "Memindahkan alur surat masuk dan keluar ke aplikasi e-Surat.",
+   "deskripsi": "Move incoming and outgoing letters into the e-Surat app.",
+   "tujuan": "Move incoming and outgoing letters into the e-Surat app.",
    "status": "In Progress",
    "prioritas": "Tinggi",
    "indikator_ids": [
@@ -1623,10 +1623,10 @@
   },
   {
    "id": "p2",
-   "nama": "Penyusunan SOP Tata Kelola Dokumen",
+   "nama": "Records Governance SOP Drafting",
    "unit": "Biro Perencanaan",
-   "deskripsi": "Menyusun tiga SOP pendukung tugas dan fungsi biro.",
-   "tujuan": "Menyusun tiga SOP pendukung tugas dan fungsi biro.",
+   "deskripsi": "Draft three SOPs that support the bureau's tasks.",
+   "tujuan": "Draft three SOPs that support the bureau's tasks.",
    "status": "In Progress",
    "prioritas": "Tinggi",
    "indikator_ids": [
@@ -1644,10 +1644,10 @@
   },
   {
    "id": "p3",
-   "nama": "Survei Kepuasan Layanan Internal 2026",
+   "nama": "Internal Service Satisfaction Survey 2026",
    "unit": "Sekretariat",
-   "deskripsi": "Mengukur kepuasan unit kerja atas layanan kesekretariatan.",
-   "tujuan": "Mengukur kepuasan unit kerja atas layanan kesekretariatan.",
+   "deskripsi": "Measure how satisfied units are with secretariat services.",
+   "tujuan": "Measure how satisfied units are with secretariat services.",
    "status": "In Progress",
    "prioritas": "Sedang",
    "indikator_ids": [
@@ -1664,10 +1664,10 @@
   },
   {
    "id": "p4",
-   "nama": "Cascading IKU & Perjanjian Kinerja",
+   "nama": "KPI Cascading and Performance Agreements",
    "unit": "Biro Perencanaan",
-   "deskripsi": "Menurunkan indikator kinerja utama ke tiap unit dan menyusun PK.",
-   "tujuan": "Menurunkan indikator kinerja utama ke tiap unit dan menyusun PK.",
+   "deskripsi": "Cascade key performance indicators to each unit and draft the agreements.",
+   "tujuan": "Cascade key performance indicators to each unit and draft the agreements.",
    "status": "Completed",
    "prioritas": "Mendesak",
    "indikator_ids": [
@@ -1686,10 +1686,10 @@
   },
   {
    "id": "p5",
-   "nama": "Dashboard Monitoring Capaian Output",
+   "nama": "Output Achievement Dashboard",
    "unit": "Biro Perencanaan",
-   "deskripsi": "Papan pantau capaian output triwulanan yang terisi otomatis.",
-   "tujuan": "Papan pantau capaian output triwulanan yang terisi otomatis.",
+   "deskripsi": "A quarterly output tracking board that fills itself.",
+   "tujuan": "A quarterly output tracking board that fills itself.",
    "status": "In Progress",
    "prioritas": "Sedang",
    "indikator_ids": [
@@ -1706,10 +1706,10 @@
   },
   {
    "id": "p6",
-   "nama": "Reviu Dokumen Kerja Sama",
+   "nama": "Cooperation Agreement Review",
    "unit": "Sekretariat",
-   "deskripsi": "Menelaah draf perjanjian kerja sama yang diajukan unit kerja.",
-   "tujuan": "Menelaah draf perjanjian kerja sama yang diajukan unit kerja.",
+   "deskripsi": "Review draft cooperation agreements submitted by units.",
+   "tujuan": "Review draft cooperation agreements submitted by units.",
    "status": "In Progress",
    "prioritas": "Sedang",
    "indikator_ids": [
@@ -1726,10 +1726,10 @@
   },
   {
    "id": "p7",
-   "nama": "Penguatan Layanan Tanda Tangan Elektronik",
+   "nama": "Electronic Signature Service Strengthening",
    "unit": "Biro Umum",
-   "deskripsi": "Memastikan sertifikat elektronik aktif dan pengguna terlatih.",
-   "tujuan": "Memastikan sertifikat elektronik aktif dan pengguna terlatih.",
+   "deskripsi": "Make sure e-certificates are active and users are trained.",
+   "tujuan": "Make sure e-certificates are active and users are trained.",
    "status": "In Progress",
    "prioritas": "Tinggi",
    "indikator_ids": [
@@ -1746,10 +1746,10 @@
   },
   {
    "id": "p8",
-   "nama": "Laporan Kinerja Instansi 2026",
+   "nama": "Agency Performance Report 2026",
    "unit": "Biro Perencanaan",
-   "deskripsi": "Menyiapkan bahan dan data dukung laporan kinerja tahunan.",
-   "tujuan": "Menyiapkan bahan dan data dukung laporan kinerja tahunan.",
+   "deskripsi": "Prepare material and supporting data for the annual performance report.",
+   "tujuan": "Prepare material and supporting data for the annual performance report.",
    "status": "Planning",
    "prioritas": "Sedang",
    "indikator_ids": [
@@ -1768,11 +1768,11 @@
  "meetings": [
   {
    "id": "m1",
-   "judul": "Rapat Koordinasi Penyusunan SOP",
+   "judul": "SOP Drafting Coordination Meeting",
    "tanggal": "2026-08-21",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "tempat": "Ruang Rapat Lantai 3",
+   "tempat": "Meeting Room, 3rd Floor",
    "pimpinan": "Sri Handayani",
    "moderator": "Raka Wijaya",
    "peserta": [
@@ -1783,26 +1783,34 @@
     "Fajar Alamsyah"
    ],
    "agenda": [
-    "Progres penyusunan tiga draf SOP",
-    "Pembagian penelaah per dokumen"
+    "Progress on the three SOP drafts",
+    "Assigning a reviewer per document"
    ],
    "pokok": [
-    "Progres penyusunan tiga draf SOP",
-    "Pembagian penelaah per dokumen"
+    "Progress on the three SOP drafts",
+    "Assigning a reviewer per document"
    ],
    "pembahasan": [
-    "Progres penyusunan tiga draf SOP",
-    "Pembagian penelaah per dokumen"
+    "Progress on the three SOP drafts",
+    "Assigning a reviewer per document"
    ],
    "keputusan": [
-    "Draf SOP Tata Naskah Dinas disepakati masuk reviu tahap dua",
-    "Format penomoran SOP mengikuti tata naskah yang berlaku"
+    "The Official Correspondence SOP goes to second-stage review",
+    "SOP numbering follows the current correspondence format"
    ],
    "tindak_lanjut": [
-    "Perbaikan draf SOP | Raka Wijaya | +7",
-    "Pengumpulan masukan unit | Dita Ramadhani | +10"
+    {
+     "uraian": "Revise the SOP draft",
+     "pic": "Raka Wijaya",
+     "deadline": "2026-08-28"
+    },
+    {
+     "uraian": "Collect feedback from units",
+     "pic": "Dita Ramadhani",
+     "deadline": "2026-08-31"
+    }
    ],
-   "kesimpulan": "Draf SOP Tata Naskah Dinas disepakati masuk reviu tahap dua",
+   "kesimpulan": "The Official Correspondence SOP goes to second-stage review",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p2",
@@ -1812,11 +1820,11 @@
   },
   {
    "id": "m2",
-   "judul": "Rapat Evaluasi Capaian Output Triwulan",
+   "judul": "Quarterly Output Evaluation Meeting",
    "tanggal": "2026-08-14",
    "jam_mulai": "13:30",
    "jam_selesai": "15:00",
-   "tempat": "Daring (Zoom)",
+   "tempat": "Online (Zoom)",
    "pimpinan": "Sri Handayani",
    "moderator": "Raka Wijaya",
    "peserta": [
@@ -1827,26 +1835,34 @@
     "Sri Handayani"
    ],
    "agenda": [
-    "Realisasi capaian output per unit",
-    "Kendala pengumpulan data dukung"
+    "Output achievement by unit",
+    "Obstacles in collecting supporting data"
    ],
    "pokok": [
-    "Realisasi capaian output per unit",
-    "Kendala pengumpulan data dukung"
+    "Output achievement by unit",
+    "Obstacles in collecting supporting data"
    ],
    "pembahasan": [
-    "Realisasi capaian output per unit",
-    "Kendala pengumpulan data dukung"
+    "Output achievement by unit",
+    "Obstacles in collecting supporting data"
    ],
    "keputusan": [
-    "Unit menyampaikan data dukung paling lambat akhir bulan",
-    "Dashboard dipakai sebagai rujukan tunggal capaian"
+    "Units submit supporting data by the end of the month",
+    "The dashboard is the single reference for achievement"
    ],
    "tindak_lanjut": [
-    "Pemutakhiran dashboard | Yoga Pranata | +5",
-    "Surat permintaan data dukung | Nabila Kusuma | +3"
+    {
+     "uraian": "Update the dashboard",
+     "pic": "Yoga Pranata",
+     "deadline": "2026-08-19"
+    },
+    {
+     "uraian": "Send the supporting data request letter",
+     "pic": "Nabila Kusuma",
+     "deadline": "2026-08-17"
+    }
    ],
-   "kesimpulan": "Unit menyampaikan data dukung paling lambat akhir bulan",
+   "kesimpulan": "Units submit supporting data by the end of the month",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p5",
@@ -1856,11 +1872,11 @@
   },
   {
    "id": "m3",
-   "judul": "Rapat Persiapan Survei Kepuasan Layanan",
+   "judul": "Satisfaction Survey Preparation Meeting",
    "tanggal": "2026-09-18",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "tempat": "Ruang Rapat Utama",
+   "tempat": "Main Meeting Room",
    "pimpinan": "Sri Handayani",
    "moderator": "Nabila Kusuma",
    "peserta": [
@@ -1871,26 +1887,34 @@
     "Yoga Pranata"
    ],
    "agenda": [
-    "Rancangan kuesioner",
-    "Target responden per unit"
+    "Questionnaire design",
+    "Target respondents per unit"
    ],
    "pokok": [
-    "Rancangan kuesioner",
-    "Target responden per unit"
+    "Questionnaire design",
+    "Target respondents per unit"
    ],
    "pembahasan": [
-    "Rancangan kuesioner",
-    "Target responden per unit"
+    "Questionnaire design",
+    "Target respondents per unit"
    ],
    "keputusan": [
-    "Kuesioner memakai delapan indikator inti",
-    "Survei dibuka selama dua minggu"
+    "The questionnaire uses eight core indicators",
+    "The survey stays open for two weeks"
    ],
    "tindak_lanjut": [
-    "Finalisasi kuesioner | Intan Maharani | +4",
-    "Sosialisasi ke unit | Fajar Alamsyah | +6"
+    {
+     "uraian": "Finalize the questionnaire",
+     "pic": "Intan Maharani",
+     "deadline": "2026-09-22"
+    },
+    {
+     "uraian": "Brief all units about the survey",
+     "pic": "Fajar Alamsyah",
+     "deadline": "2026-09-24"
+    }
    ],
-   "kesimpulan": "Kuesioner memakai delapan indikator inti",
+   "kesimpulan": "The questionnaire uses eight core indicators",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p3",
@@ -1900,11 +1924,11 @@
   },
   {
    "id": "m4",
-   "judul": "Rapat Reviu Dokumen Kerja Sama",
+   "judul": "Cooperation Agreement Review Meeting",
    "tanggal": "2026-08-21",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "tempat": "Ruang Rapat Lantai 3",
+   "tempat": "Meeting Room, 3rd Floor",
    "pimpinan": "Sri Handayani",
    "moderator": "Nabila Kusuma",
    "peserta": [
@@ -1915,24 +1939,28 @@
     "Intan Maharani"
    ],
    "agenda": [
-    "Telaah draf perjanjian kerja sama",
-    "Kesesuaian dengan ketentuan"
+    "Review of the draft cooperation agreement",
+    "Fit with the applicable rules"
    ],
    "pokok": [
-    "Telaah draf perjanjian kerja sama",
-    "Kesesuaian dengan ketentuan"
+    "Review of the draft cooperation agreement",
+    "Fit with the applicable rules"
    ],
    "pembahasan": [
-    "Telaah draf perjanjian kerja sama",
-    "Kesesuaian dengan ketentuan"
+    "Review of the draft cooperation agreement",
+    "Fit with the applicable rules"
    ],
    "keputusan": [
-    "Dua klausul diperbaiki sebelum diajukan ke pimpinan"
+    "Two clauses are fixed before the draft goes to leadership"
    ],
    "tindak_lanjut": [
-    "Perbaikan klausul | Sri Handayani | +5"
+    {
+     "uraian": "Fix the two clauses",
+     "pic": "Sri Handayani",
+     "deadline": "2026-08-26"
+    }
    ],
-   "kesimpulan": "Dua klausul diperbaiki sebelum diajukan ke pimpinan",
+   "kesimpulan": "Two clauses are fixed before the draft goes to leadership",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p6",
@@ -1942,11 +1970,11 @@
   },
   {
    "id": "m5",
-   "judul": "Rapat Penetapan Perjanjian Kinerja",
+   "judul": "Performance Agreement Finalization Meeting",
    "tanggal": "2026-08-14",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "tempat": "Ruang Rapat Utama",
+   "tempat": "Main Meeting Room",
    "pimpinan": "Sri Handayani",
    "moderator": "Yoga Pranata",
    "peserta": [
@@ -1957,24 +1985,28 @@
     "Fajar Alamsyah"
    ],
    "agenda": [
-    "Draf PK eselon 1 dan eselon 2",
-    "Jadwal penandatanganan"
+    "Draft agreements for level 1 and level 2",
+    "Signing schedule"
    ],
    "pokok": [
-    "Draf PK eselon 1 dan eselon 2",
-    "Jadwal penandatanganan"
+    "Draft agreements for level 1 and level 2",
+    "Signing schedule"
    ],
    "pembahasan": [
-    "Draf PK eselon 1 dan eselon 2",
-    "Jadwal penandatanganan"
+    "Draft agreements for level 1 and level 2",
+    "Signing schedule"
    ],
    "keputusan": [
-    "Draf PK disetujui untuk ditandatangani pekan depan"
+    "The draft agreements are approved for signing next week"
    ],
    "tindak_lanjut": [
-    "Penyiapan dokumen tanda tangan | Raka Wijaya | +3"
+    {
+     "uraian": "Prepare the signing documents",
+     "pic": "Raka Wijaya",
+     "deadline": "2026-08-17"
+    }
    ],
-   "kesimpulan": "Draf PK disetujui untuk ditandatangani pekan depan",
+   "kesimpulan": "The draft agreements are approved for signing next week",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p4",
@@ -1984,11 +2016,11 @@
   },
   {
    "id": "m6",
-   "judul": "Rapat Pemantauan Layanan TTE",
+   "judul": "E-Signature Service Monitoring Meeting",
    "tanggal": "2026-08-18",
    "jam_mulai": "13:30",
    "jam_selesai": "15:00",
-   "tempat": "Daring (Zoom)",
+   "tempat": "Online (Zoom)",
    "pimpinan": "Sri Handayani",
    "moderator": "Fajar Alamsyah",
    "peserta": [
@@ -1999,24 +2031,28 @@
     "Bagas Nurcahyo"
    ],
    "agenda": [
-    "Jumlah sertifikat aktif",
-    "Kendala pengguna baru"
+    "Number of active certificates",
+    "Obstacles for new users"
    ],
    "pokok": [
-    "Jumlah sertifikat aktif",
-    "Kendala pengguna baru"
+    "Number of active certificates",
+    "Obstacles for new users"
    ],
    "pembahasan": [
-    "Jumlah sertifikat aktif",
-    "Kendala pengguna baru"
+    "Number of active certificates",
+    "Obstacles for new users"
    ],
    "keputusan": [
-    "Pendampingan pengguna baru dijadwalkan tiap awal bulan"
+    "New-user assistance is scheduled at the start of every month"
    ],
    "tindak_lanjut": [
-    "Jadwal pendampingan | Bagas Nurcahyo | +8"
+    {
+     "uraian": "Set the assistance schedule",
+     "pic": "Bagas Nurcahyo",
+     "deadline": "2026-08-26"
+    }
    ],
-   "kesimpulan": "Pendampingan pengguna baru dijadwalkan tiap awal bulan",
+   "kesimpulan": "New-user assistance is scheduled at the start of every month",
    "catatan_mentah": "",
    "lampiran": [],
    "project_id": "p7",
@@ -2028,12 +2064,12 @@
  "events": [
   {
    "id": "e1",
-   "judul": "Rapat Koordinasi Penyusunan SOP",
+   "judul": "SOP Drafting Coordination Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-08-21",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Yoga Pranata",
     "Nabila Kusuma",
@@ -2049,12 +2085,12 @@
   },
   {
    "id": "e2",
-   "judul": "Rapat Evaluasi Capaian Output Triwulan",
+   "judul": "Quarterly Output Evaluation Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-08-14",
    "jam_mulai": "13:30",
    "jam_selesai": "15:00",
-   "lokasi": "Daring (Zoom)",
+   "lokasi": "Online (Zoom)",
    "peserta": [
     "Bagas Nurcahyo",
     "Nabila Kusuma",
@@ -2070,12 +2106,12 @@
   },
   {
    "id": "e3",
-   "judul": "Rapat Persiapan Survei Kepuasan Layanan",
+   "judul": "Satisfaction Survey Preparation Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-09-18",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "lokasi": "Ruang Rapat Utama",
+   "lokasi": "Main Meeting Room",
    "peserta": [
     "Fajar Alamsyah",
     "Nabila Kusuma",
@@ -2091,12 +2127,12 @@
   },
   {
    "id": "e4",
-   "judul": "Rapat Reviu Dokumen Kerja Sama",
+   "judul": "Cooperation Agreement Review Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-08-21",
    "jam_mulai": "10:00",
    "jam_selesai": "12:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Sri Handayani",
     "Yoga Pranata",
@@ -2112,12 +2148,12 @@
   },
   {
    "id": "e5",
-   "judul": "Rapat Penetapan Perjanjian Kinerja",
+   "judul": "Performance Agreement Finalization Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-08-14",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Utama",
+   "lokasi": "Main Meeting Room",
    "peserta": [
     "Raka Wijaya",
     "Yoga Pranata",
@@ -2133,12 +2169,12 @@
   },
   {
    "id": "e6",
-   "judul": "Rapat Pemantauan Layanan TTE",
+   "judul": "E-Signature Service Monitoring Meeting",
    "jenis": "Rapat",
    "tanggal": "2026-08-18",
    "jam_mulai": "13:30",
    "jam_selesai": "15:00",
-   "lokasi": "Daring (Zoom)",
+   "lokasi": "Online (Zoom)",
    "peserta": [
     "Yoga Pranata",
     "Raka Wijaya",
@@ -2154,12 +2190,12 @@
   },
   {
    "id": "e100",
-   "judul": "Batas penyampaian data dukung triwulan",
+   "judul": "Supporting data submission deadline",
    "jenis": "Deadline",
    "tanggal": "2026-09-28",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Fajar Alamsyah",
     "Yoga Pranata",
@@ -2173,12 +2209,12 @@
   },
   {
    "id": "e101",
-   "judul": "Sosialisasi aplikasi e-Surat",
+   "judul": "e-Surat app briefing",
    "jenis": "Kegiatan",
    "tanggal": "2026-09-18",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Intan Maharani",
     "Yoga Pranata",
@@ -2192,12 +2228,12 @@
   },
   {
    "id": "e102",
-   "judul": "Pelatihan perencanaan dan penganggaran",
+   "judul": "Planning and budgeting training",
    "jenis": "Kegiatan",
    "tanggal": "2026-09-13",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Yoga Pranata",
     "Sri Handayani",
@@ -2211,12 +2247,12 @@
   },
   {
    "id": "e103",
-   "judul": "Batas akhir penyampaian draf SOP",
+   "judul": "Final deadline for SOP drafts",
    "jenis": "Deadline",
    "tanggal": "2026-10-03",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Sri Handayani",
     "Raka Wijaya",
@@ -2230,12 +2266,12 @@
   },
   {
    "id": "e104",
-   "judul": "Pendampingan pengguna TTE",
+   "judul": "e-Signature user assistance",
    "jenis": "Pekerjaan",
    "tanggal": "2026-09-24",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Intan Maharani",
     "Nabila Kusuma",
@@ -2249,12 +2285,12 @@
   },
   {
    "id": "e105",
-   "judul": "Rapat pimpinan mingguan",
+   "judul": "Weekly leadership meeting",
    "jenis": "Rapat",
    "tanggal": "2026-09-26",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Yoga Pranata",
     "Sri Handayani",
@@ -2268,12 +2304,12 @@
   },
   {
    "id": "e106",
-   "judul": "Penutupan survei kepuasan",
+   "judul": "Survey closes",
    "jenis": "Deadline",
    "tanggal": "2026-10-06",
    "jam_mulai": "09:00",
    "jam_selesai": "11:00",
-   "lokasi": "Ruang Rapat Lantai 3",
+   "lokasi": "Meeting Room, 3rd Floor",
    "peserta": [
     "Intan Maharani",
     "Raka Wijaya",

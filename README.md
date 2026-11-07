@@ -4,8 +4,9 @@
 
 A single-file work manager for public-sector staff. You type one line when you do
 something; Workline turns that into the daily attendance recap, the quarterly
-performance report (SKP), the draft performance evaluation (EKP), and the meeting
-minutes — without anyone retyping the same work four times.
+performance report (KPI, called SKP in the Indonesian civil service), the draft
+performance appraisal (called EKP there), and the meeting minutes — without
+anyone retyping the same work four times.
 
 **[Open the live demo →](https://juliusgunawan0707.github.io/workline/)**
 
@@ -23,8 +24,8 @@ Calendar → Meeting notes → Create task ↗
 |---|---|
 | **Quick Add** | `09.00-10.30 Budget revision meeting #dashboard @7 !high` parses into time, project, performance indicator, priority, category and date. Preview chips show the parse before you commit. |
 | **Close Day** | Generates a numbered attendance recap capped at 5 lines — the exact shape the attendance system accepts — with live line and character counters. |
-| **SKP / EKP** | The achievement column is *computed from logged work*, not written by a model. Six calculation methods: `COUNT_TASK`, `COUNT_EVIDENCE`, `COUNT_MEETING`, `PERSEN_TRIWULAN`, `DURASI_HARI`, `SUM_JAM`. |
-| **Meeting notes** | Raw notes become structured minutes — discussion, decisions, follow-ups with owner and due date — and follow-ups become tasks. |
+| **KPI / Performance appraisal** | The achievement column is *computed from logged work*, not written by a model. Six calculation methods: `COUNT_TASK`, `COUNT_EVIDENCE`, `COUNT_MEETING`, `PERSEN_TRIWULAN`, `DURASI_HARI`, `SUM_JAM`. |
+| **Meeting notes** | Minutes hold discussion, decisions and follow-ups with owner and due date, and each follow-up becomes a task with one click. Turning raw notes into structured minutes uses the AI button, which needs the host runtime; without it you fill the fields in by hand. |
 | **Carry forward** | Unfinished work from earlier days surfaces today without moving its planned date, so quarterly reporting stays in the right quarter. |
 
 **Numbers are never invented.** Indicators with no logged evidence print
@@ -38,9 +39,9 @@ Open `index.html`. That is the whole install — no build, no server, no account
 Data lives in your browser's `localStorage`; **Backup** exports a JSON file and
 restores it with IDs intact, so links between tasks, projects and minutes survive.
 
-Bilingual EN/ID and light/dark, both remembered. Generated documents stay in
-Indonesian regardless of interface language, because they are filed into
-Indonesian-language systems.
+Bilingual EN/ID (English by default) and light/dark, both remembered. Generated
+documents (attendance recap, appraisal wording, Excel and Word exports) follow the
+interface language. The demo dataset is in English.
 
 ## About the demo data
 
@@ -63,8 +64,10 @@ published: it necessarily contains the very names and internal URLs it removes.
 ## Note on AI features
 
 The polish buttons call the host runtime's model API. Outside that host they are
-inert by design — every deterministic path (recap generation, SKP and EKP
-calculation, minutes structuring) works with no model and no network.
+inert by design — every deterministic path (recap generation, KPI and
+appraisal calculation, follow-ups to tasks) works with no model. Structuring raw
+notes into minutes is the one step that needs the model. The Excel export loads a
+small library from a CDN the first time you use it.
 
 ---
 

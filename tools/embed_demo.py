@@ -19,12 +19,17 @@ DATA = sys.argv[2] if len(sys.argv) > 2 else "demo-data.json"
 s = io.open(HTML, encoding="utf-8").read()
 demo = json.load(io.open(DATA, encoding="utf-8"))
 
-if "const DEMO_DATA=" in s:
-    raise SystemExit("ABORT: demo seeder already embedded")
-
 anchor_marker = "async function boot(){"
 if anchor_marker not in s:
     raise SystemExit("ABORT: boot() not found")
+
+# Re-embedding: drop the previous seeder block first, so this script can be re-run
+# after the dataset changes (it replaces the data, it never stacks a second copy).
+seed_start = "\n/* ============================ DEMO SEED"
+if "const DEMO_DATA=" in s:
+    _a = s.index(seed_start)
+    _b = s.index(anchor_marker)
+    s = s[:_a] + s[_b:]
 
 payload = json.dumps(demo, ensure_ascii=False, separators=(",", ":"))
 
@@ -44,6 +49,18 @@ function demoGeser(rec,hari,medan){
     if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(tgl)) continue;
     const d=new Date(tgl+"T00:00:00Z"); d.setUTCDate(d.getUTCDate()+hari);
     rec[k]=d.toISOString().slice(0,10)+String(v).slice(10);
+  }
+  /* minutes carry a follow-up list, each item with its own due date: move those along too */
+  if(Array.isArray(rec.tindak_lanjut)){
+    for(let i=0;i<rec.tindak_lanjut.length;i++){
+      const it=Object.assign({},rec.tindak_lanjut[i]);
+      const tg=String(it.deadline||"");
+      if(/^\\d{4}-\\d{2}-\\d{2}$/.test(tg)){
+        const dd=new Date(tg+"T00:00:00Z"); dd.setUTCDate(dd.getUTCDate()+hari);
+        it.deadline=dd.toISOString().slice(0,10);
+      }
+      rec.tindak_lanjut[i]=it;
+    }
   }
   return rec;
 }
@@ -77,9 +94,10 @@ function seedDemoIfEmpty(){
 s = s.replace(anchor_marker, seeder + "\n" + anchor_marker, 1)
 
 # run it right after local data is hydrated, before anything renders
-if "hydrateLocal();" not in s:
-    raise SystemExit("ABORT: hydrateLocal() call not found")
-s = s.replace("hydrateLocal();", "hydrateLocal(); seedDemoIfEmpty();", 1)
+if "hydrateLocal(); seedDemoIfEmpty();" not in s:
+    if "hydrateLocal();" not in s:
+        raise SystemExit("ABORT: hydrateLocal() call not found")
+    s = s.replace("hydrateLocal();", "hydrateLocal(); seedDemoIfEmpty();", 1)
 
 io.open(HTML, "w", encoding="utf-8", newline="").write(s)
 print("embedded %d tasks / %d projects / %d meetings / %d events"

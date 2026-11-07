@@ -7,6 +7,10 @@ app writes itself, so the demo exercises the real calculation paths
 (COUNT_TASK, COUNT_EVIDENCE, COUNT_MEETING, PERSEN_TRIWULAN, DURASI_HARI,
 SUM_JAM) rather than showing pre-baked numbers.
 
+The free text (task, project, agenda and minutes wording) is English. Internal
+keys that the app translates itself (status, priority, category, source, unit)
+stay as the app's own keys, so the UI language switch still works.
+
 Dates are anchored to ANCHOR; the in-app seeder shifts them so the newest
 entry always lands on the day a visitor opens the page.
 
@@ -19,13 +23,18 @@ from datetime import date, timedelta
 random.seed(20260922)                      # deterministic output
 ANCHOR = date(2026, 9, 22)                 # newest task lands here
 
+# app keys (translated for display by the app's own VALMAP)
 KATEGORI = ["Rapat & Koordinasi", "Penyusunan Dokumen", "Telaah & Reviu",
             "Analisis Data", "Layanan e-Surat & Email", "Layanan TTE",
             "Monitoring & Evaluasi", "Pengembangan Aplikasi",
             "Pengembangan Kompetensi", "Administrasi Umum"]
 UNIT = ["Biro Perencanaan", "Sekretariat", "Direktorat Lingkungan",
         "Direktorat Perencanaan", "Inspektorat", "Biro Keuangan",
-        "Biro Umum", "Unit Layanan", "Satker Mitra", "Eksternal / K-L Lain"]
+        "Biro Umum", "UKHK", "Satker C", "Eksternal / K-L Lain"]
+# English wording used INSIDE task titles (same order as UNIT[:8])
+UNIT_TXT = ["Planning Bureau", "Secretariat", "Environment Directorate",
+            "Planning Directorate", "Inspectorate", "Finance Bureau",
+            "General Affairs Bureau", "Legal and PR Unit"]
 SUMBER = ["Mandiri", "Disposisi Pimpinan", "Hasil Rapat",
           "Permintaan Unit Lain", "Rutin"]
 ORANG = ["Raka Wijaya", "Sri Handayani", "Bagas Nurcahyo", "Dita Ramadhani",
@@ -42,29 +51,29 @@ def stamp(d, h=8, m=0):
 
 # --------------------------------------------------------------- projects
 P = [
-    ("p1", "Digitalisasi Layanan Persuratan", "Biro Perencanaan",
-     "Memindahkan alur surat masuk dan keluar ke aplikasi e-Surat.",
+    ("p1", "Correspondence Digitalization", "Biro Perencanaan",
+     "Move incoming and outgoing letters into the e-Surat app.",
      "In Progress", "Tinggi", ["i1"], 65),
-    ("p2", "Penyusunan SOP Tata Kelola Dokumen", "Biro Perencanaan",
-     "Menyusun tiga SOP pendukung tugas dan fungsi biro.",
+    ("p2", "Records Governance SOP Drafting", "Biro Perencanaan",
+     "Draft three SOPs that support the bureau's tasks.",
      "In Progress", "Tinggi", ["i3", "i6"], 45),
-    ("p3", "Survei Kepuasan Layanan Internal 2026", "Sekretariat",
-     "Mengukur kepuasan unit kerja atas layanan kesekretariatan.",
+    ("p3", "Internal Service Satisfaction Survey 2026", "Sekretariat",
+     "Measure how satisfied units are with secretariat services.",
      "In Progress", "Sedang", ["i10"], 30),
-    ("p4", "Cascading IKU & Perjanjian Kinerja", "Biro Perencanaan",
-     "Menurunkan indikator kinerja utama ke tiap unit dan menyusun PK.",
+    ("p4", "KPI Cascading and Performance Agreements", "Biro Perencanaan",
+     "Cascade key performance indicators to each unit and draft the agreements.",
      "Completed", "Mendesak", ["i8a", "i8b", "i9"], 100),
-    ("p5", "Dashboard Monitoring Capaian Output", "Biro Perencanaan",
-     "Papan pantau capaian output triwulanan yang terisi otomatis.",
+    ("p5", "Output Achievement Dashboard", "Biro Perencanaan",
+     "A quarterly output tracking board that fills itself.",
      "In Progress", "Sedang", ["i4"], 55),
-    ("p6", "Reviu Dokumen Kerja Sama", "Sekretariat",
-     "Menelaah draf perjanjian kerja sama yang diajukan unit kerja.",
+    ("p6", "Cooperation Agreement Review", "Sekretariat",
+     "Review draft cooperation agreements submitted by units.",
      "In Progress", "Sedang", ["i7"], 40),
-    ("p7", "Penguatan Layanan Tanda Tangan Elektronik", "Biro Umum",
-     "Memastikan sertifikat elektronik aktif dan pengguna terlatih.",
+    ("p7", "Electronic Signature Service Strengthening", "Biro Umum",
+     "Make sure e-certificates are active and users are trained.",
      "In Progress", "Tinggi", ["i2"], 70),
-    ("p8", "Laporan Kinerja Instansi 2026", "Biro Perencanaan",
-     "Menyiapkan bahan dan data dukung laporan kinerja tahunan.",
+    ("p8", "Agency Performance Report 2026", "Biro Perencanaan",
+     "Prepare material and supporting data for the annual performance report.",
      "Planning", "Sedang", ["i5"], 15),
 ]
 
@@ -82,41 +91,44 @@ for pid, nama, unit, desc, st, pri, inds, prog in P:
     })
 
 # ------------------------------------------------------------------ tasks
+# Titles start with an imperative verb: the English recap generator turns
+# "Draft ..." into "Drafted ..." from a small verb table.
 TPL = [
-    ("Memproses {n} surat masuk pada aplikasi e-Surat",
+    ("Process {n} incoming letters in the e-Surat app",
      "Layanan e-Surat & Email", "p1", "i1", "Rutin"),
-    ("Menyelesaikan kendala akses akun e-Surat pengguna {u}",
+    ("Resolve e-Surat account access issue for {u} users",
      "Layanan e-Surat & Email", "p1", "i1", "Permintaan Unit Lain"),
-    ("Menerbitkan sertifikat tanda tangan elektronik untuk {u}",
+    ("Issue electronic signature certificates for {u}",
      "Layanan TTE", "p7", "i2", "Permintaan Unit Lain"),
-    ("Pendampingan penggunaan TTE bagi pejabat penanda tangan",
+    ("Assist signing officials with e-signature use",
      "Layanan TTE", "p7", "i2", "Mandiri"),
-    ("Menyusun draf SOP {d}", "Penyusunan Dokumen", "p2", "i3", "Mandiri"),
-    ("Reviu draf SOP {d} bersama unit pengusul",
+    ("Draft SOP for {d}", "Penyusunan Dokumen", "p2", "i3", "Mandiri"),
+    ("Review SOP draft for {d} with the submitting unit",
      "Telaah & Reviu", "p2", "i6", "Permintaan Unit Lain"),
-    ("Menyusun rekapitulasi capaian output triwulan",
+    ("Compile the quarterly output achievement summary",
      "Analisis Data", "p5", "i4", "Rutin"),
-    ("Memutakhirkan dashboard monitoring capaian output",
+    ("Update the output achievement dashboard",
      "Pengembangan Aplikasi", "p5", "i4", "Mandiri"),
-    ("Menelaah draf perjanjian kerja sama dengan {u}",
+    ("Review draft cooperation agreement with {u}",
      "Telaah & Reviu", "p6", "i7", "Disposisi Pimpinan"),
-    ("Menyiapkan bahan evaluasi akuntabilitas kinerja",
+    ("Prepare material for the accountability evaluation",
      "Penyusunan Dokumen", "p8", "i5", "Disposisi Pimpinan"),
-    ("Menyusun dokumen cascading indikator kinerja utama",
+    ("Draft the key performance indicator cascading document",
      "Penyusunan Dokumen", "p4", "i8a", "Mandiri"),
-    ("Menyusun draf perjanjian kinerja unit {u}",
+    ("Draft the performance agreement for {u}",
      "Penyusunan Dokumen", "p4", "i9", "Mandiri"),
-    ("Menyebarkan kuesioner survei kepuasan ke unit {u}",
+    ("Distribute the satisfaction survey questionnaire to {u}",
      "Monitoring & Evaluasi", "p3", "i10", "Mandiri"),
-    ("Mengolah hasil survei kepuasan layanan internal",
+    ("Analyze the internal service satisfaction survey results",
      "Analisis Data", "p3", "i10", "Mandiri"),
-    ("Rapat koordinasi persiapan {d}", "Rapat & Koordinasi", "", "", "Hasil Rapat"),
-    ("Mengikuti pelatihan perencanaan dan penganggaran",
+    ("Attend coordination meeting to prepare {d}", "Rapat & Koordinasi", "", "", "Hasil Rapat"),
+    ("Attend training on planning and budgeting",
      "Pengembangan Kompetensi", "", "it1a", "Disposisi Pimpinan"),
-    ("Merapikan arsip dokumen {d}", "Administrasi Umum", "", "", "Rutin"),
+    ("Organize the {d} archive", "Administrasi Umum", "", "", "Rutin"),
 ]
-DOK = ["Pengelolaan Arsip Dinamis", "Tata Naskah Dinas", "Pengajuan Kerja Sama",
-       "Monitoring dan Evaluasi", "Pelayanan Informasi Publik"]
+DOK = ["Dynamic Records Management", "Official Correspondence Format",
+       "Cooperation Proposals", "Monitoring and Evaluation",
+       "Public Information Services"]
 
 tasks = []
 tid = 0
@@ -127,13 +139,13 @@ while day <= ANCHOR:
             tid += 1
             judul, kat, pid, ind, sumber = random.choice(TPL)
             judul = (judul.replace("{n}", str(random.randint(4, 18)))
-                          .replace("{u}", random.choice(UNIT[:8]))
+                          .replace("{u}", random.choice(UNIT_TXT))
                           .replace("{d}", random.choice(DOK)))
             h = random.choice([8, 9, 10, 13, 14, 15])
             dur = random.choice([30, 45, 60, 90, 120])
             age = (ANCHOR - day).days
             # Leave a believable tail of unfinished work so the To-Do view,
-            # the "Belum Dikerjakan" group and the overdue chip all have
+            # the "Not done yet" group and the overdue chip all have
             # something to show. A demo where everything is done is a demo
             # of an empty screen.
             if age > 7:
@@ -175,38 +187,42 @@ while day <= ANCHOR:
     day += timedelta(days=1)
 
 # --------------------------------------------------------------- meetings
+# follow-ups: (what, owner, days after the meeting). They are stored as
+# {uraian, pic, deadline} objects, the shape the minutes view and
+# "Create Task" read.
 MTG = [
-    ("Rapat Koordinasi Penyusunan SOP", "p2", "i3",
-     ["Progres penyusunan tiga draf SOP", "Pembagian penelaah per dokumen"],
-     ["Draf SOP Tata Naskah Dinas disepakati masuk reviu tahap dua",
-      "Format penomoran SOP mengikuti tata naskah yang berlaku"],
-     ["Perbaikan draf SOP | Raka Wijaya | +7",
-      "Pengumpulan masukan unit | Dita Ramadhani | +10"]),
-    ("Rapat Evaluasi Capaian Output Triwulan", "p5", "i4",
-     ["Realisasi capaian output per unit", "Kendala pengumpulan data dukung"],
-     ["Unit menyampaikan data dukung paling lambat akhir bulan",
-      "Dashboard dipakai sebagai rujukan tunggal capaian"],
-     ["Pemutakhiran dashboard | Yoga Pranata | +5",
-      "Surat permintaan data dukung | Nabila Kusuma | +3"]),
-    ("Rapat Persiapan Survei Kepuasan Layanan", "p3", "i10",
-     ["Rancangan kuesioner", "Target responden per unit"],
-     ["Kuesioner memakai delapan indikator inti",
-      "Survei dibuka selama dua minggu"],
-     ["Finalisasi kuesioner | Intan Maharani | +4",
-      "Sosialisasi ke unit | Fajar Alamsyah | +6"]),
-    ("Rapat Reviu Dokumen Kerja Sama", "p6", "i7",
-     ["Telaah draf perjanjian kerja sama", "Kesesuaian dengan ketentuan"],
-     ["Dua klausul diperbaiki sebelum diajukan ke pimpinan"],
-     ["Perbaikan klausul | Sri Handayani | +5"]),
-    ("Rapat Penetapan Perjanjian Kinerja", "p4", "i9",
-     ["Draf PK eselon 1 dan eselon 2", "Jadwal penandatanganan"],
-     ["Draf PK disetujui untuk ditandatangani pekan depan"],
-     ["Penyiapan dokumen tanda tangan | Raka Wijaya | +3"]),
-    ("Rapat Pemantauan Layanan TTE", "p7", "i2",
-     ["Jumlah sertifikat aktif", "Kendala pengguna baru"],
-     ["Pendampingan pengguna baru dijadwalkan tiap awal bulan"],
-     ["Jadwal pendampingan | Bagas Nurcahyo | +8"]),
+    ("SOP Drafting Coordination Meeting", "p2", "i3",
+     ["Progress on the three SOP drafts", "Assigning a reviewer per document"],
+     ["The Official Correspondence SOP goes to second-stage review",
+      "SOP numbering follows the current correspondence format"],
+     [("Revise the SOP draft", "Raka Wijaya", 7),
+      ("Collect feedback from units", "Dita Ramadhani", 10)]),
+    ("Quarterly Output Evaluation Meeting", "p5", "i4",
+     ["Output achievement by unit", "Obstacles in collecting supporting data"],
+     ["Units submit supporting data by the end of the month",
+      "The dashboard is the single reference for achievement"],
+     [("Update the dashboard", "Yoga Pranata", 5),
+      ("Send the supporting data request letter", "Nabila Kusuma", 3)]),
+    ("Satisfaction Survey Preparation Meeting", "p3", "i10",
+     ["Questionnaire design", "Target respondents per unit"],
+     ["The questionnaire uses eight core indicators",
+      "The survey stays open for two weeks"],
+     [("Finalize the questionnaire", "Intan Maharani", 4),
+      ("Brief all units about the survey", "Fajar Alamsyah", 6)]),
+    ("Cooperation Agreement Review Meeting", "p6", "i7",
+     ["Review of the draft cooperation agreement", "Fit with the applicable rules"],
+     ["Two clauses are fixed before the draft goes to leadership"],
+     [("Fix the two clauses", "Sri Handayani", 5)]),
+    ("Performance Agreement Finalization Meeting", "p4", "i9",
+     ["Draft agreements for level 1 and level 2", "Signing schedule"],
+     ["The draft agreements are approved for signing next week"],
+     [("Prepare the signing documents", "Raka Wijaya", 3)]),
+    ("E-Signature Service Monitoring Meeting", "p7", "i2",
+     ["Number of active certificates", "Obstacles for new users"],
+     ["New-user assistance is scheduled at the start of every month"],
+     [("Set the assistance schedule", "Bagas Nurcahyo", 8)]),
 ]
+LOKASI = ["Meeting Room, 3rd Floor", "Main Meeting Room", "Online (Zoom)"]
 
 meetings, events = [], []
 for k, (judul, pid, ind, bahas, putus, lanjut) in enumerate(MTG, 1):
@@ -217,14 +233,17 @@ for k, (judul, pid, ind, bahas, putus, lanjut) in enumerate(MTG, 1):
     jm = random.choice(["09:00", "10:00", "13:30"])
     js = "%02d:00" % (int(jm[:2]) + 2)
     peserta = random.sample(ORANG, 5)
+    tempat = random.choice(LOKASI)
     meetings.append({
         "id": mid, "judul": judul, "tanggal": iso(d),
         "jam_mulai": jm, "jam_selesai": js,
-        "tempat": random.choice(["Ruang Rapat Lantai 3", "Ruang Rapat Utama",
-                                 "Daring (Zoom)"]),
+        "tempat": tempat,
         "pimpinan": "Sri Handayani", "moderator": random.choice(ORANG),
         "peserta": peserta, "agenda": bahas, "pokok": bahas,
-        "pembahasan": bahas, "keputusan": putus, "tindak_lanjut": lanjut,
+        "pembahasan": bahas, "keputusan": putus,
+        "tindak_lanjut": [{"uraian": u, "pic": pic,
+                           "deadline": iso(d + timedelta(days=off))}
+                          for (u, pic, off) in lanjut],
         "kesimpulan": putus[0], "catatan_mentah": "", "lampiran": [],
         "project_id": pid, "indikator_id": ind, "event_id": eid,
         "status": "final",
@@ -232,25 +251,25 @@ for k, (judul, pid, ind, bahas, putus, lanjut) in enumerate(MTG, 1):
     events.append({
         "id": eid, "judul": judul, "jenis": "Rapat", "tanggal": iso(d),
         "jam_mulai": jm, "jam_selesai": js,
-        "lokasi": meetings[-1]["tempat"], "peserta": peserta,
+        "lokasi": tempat, "peserta": peserta,
         "project_id": pid, "indikator_id": ind, "meeting_id": mid,
         "status": "Terlaksana", "catatan": "",
     })
 
 # extra calendar entries with no minutes attached
-EXTRA = [("Batas penyampaian data dukung triwulan", "Deadline", 6),
-         ("Sosialisasi aplikasi e-Surat", "Kegiatan", -4),
-         ("Pelatihan perencanaan dan penganggaran", "Kegiatan", -9),
-         ("Batas akhir penyampaian draf SOP", "Deadline", 11),
-         ("Pendampingan pengguna TTE", "Pekerjaan", 2),
-         ("Rapat pimpinan mingguan", "Rapat", 4),
-         ("Penutupan survei kepuasan", "Deadline", 14)]
+EXTRA = [("Supporting data submission deadline", "Deadline", 6),
+         ("e-Surat app briefing", "Kegiatan", -4),
+         ("Planning and budgeting training", "Kegiatan", -9),
+         ("Final deadline for SOP drafts", "Deadline", 11),
+         ("e-Signature user assistance", "Pekerjaan", 2),
+         ("Weekly leadership meeting", "Rapat", 4),
+         ("Survey closes", "Deadline", 14)]
 for k, (judul, jenis, off) in enumerate(EXTRA, 100):
     d = ANCHOR + timedelta(days=off)
     events.append({
         "id": "e%d" % k, "judul": judul, "jenis": jenis, "tanggal": iso(d),
         "jam_mulai": "09:00", "jam_selesai": "11:00",
-        "lokasi": "Ruang Rapat Lantai 3", "peserta": random.sample(ORANG, 3),
+        "lokasi": "Meeting Room, 3rd Floor", "peserta": random.sample(ORANG, 3),
         "project_id": "", "indikator_id": "", "meeting_id": "",
         "status": "Terlaksana" if off < 0 else "Terjadwal", "catatan": "",
     })
